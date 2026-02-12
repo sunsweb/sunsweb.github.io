@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sun Yu projects" />
+    <title>Sun Yu | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script>
+      (function () {
+        var savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark" || savedTheme === "light") {
+          document.documentElement.setAttribute("data-theme", savedTheme);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="site-logo" href="index.html">Sun Yu</a>
+        <nav class="site-nav" aria-label="Primary">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link active" aria-current="page" href="portfolio.html">Portfolio</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            type="button"
+            aria-label="Toggle light and dark mode"
+            title="Toggle theme"
+          >
+            <img src="assets/images/moon.png" alt="Moon icon" />
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container projects-main">
+      <h1 class="projects-title">My Projects</h1>
+
+      <section class="projects-grid" aria-label="Project cards">
+        <article class="project-card">
+          <div class="project-image project-image-one" aria-hidden="true"></div>
+          <div class="project-body">
+            <h2>Project Title Placeholder</h2>
+            <p class="project-timeframe">Jan 2025 - Apr 2025</p>
+            <p>
+              Short project description placeholder. Add context, user problem, and product outcome.
+              This space is designed for quick scannability.
+            </p>
+            <div class="tag-list" aria-label="Project tags">
+              <span class="tag">User Research</span>
+              <span class="tag">Roadmapping</span>
+              <span class="tag">MVP</span>
+              <span class="tag">Analytics</span>
+            </div>
+            <p class="status-line">Status: In Progress</p>
+            <a class="case-link" href="#">View case study</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image project-image-two" aria-hidden="true"></div>
+          <div class="project-body">
+            <h2>Project Title Placeholder</h2>
+            <p class="project-timeframe">Sep 2024 - Dec 2024</p>
+            <p>
+              Short project description placeholder. Summarize goals, key decisions, and measurable impact.
+              Replace this copy with your real project narrative.
+            </p>
+            <div class="tag-list" aria-label="Project tags">
+              <span class="tag">Strategy</span>
+              <span class="tag">Prototyping</span>
+              <span class="tag">Stakeholders</span>
+              <span class="tag">Launch</span>
+            </div>
+            <p class="status-line">Status: Complete</p>
+            <a class="case-link" href="#">View case study</a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-name">Sun Yu</p>
+        <div class="social-links" aria-label="Social links">
+          <a href="mailto:yusunbuisness@gmail.com" aria-label="Email Sunny">
+            <img src="assets/images/mail.png" alt="Email icon" />
+          </a>
+          <a href="https://github.com/sunsweb" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+            <img src="assets/images/github.png" alt="GitHub icon" />
+          </a>
+          <a href="https://www.linkedin.com/in/sun-yu-b11699222/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+            <img src="assets/images/linkedin.png" alt="LinkedIn icon" />
+          </a>
+          <a href="https://substack.com/@thenascentsun" target="_blank" rel="noopener noreferrer" aria-label="Substack profile">
+            <img src="assets/images/substack.png" alt="Substack icon" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/theme.js"></script>
+  </body>
+</html>
