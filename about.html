@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="About Sun Yu" />
+    <title>Sun Yu | About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script>
+      (function () {
+        var savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark" || savedTheme === "light") {
+          document.documentElement.setAttribute("data-theme", savedTheme);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="header-inner">
+          <a class="site-logo" href="index.html">Sun Yu</a>
+          <nav class="site-nav" aria-label="Primary">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="about.html">About</a>
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode"></button>
+          </nav>
+        </div>
+      </header>
+
+      <main class="container about-main">
+        <section class="about-grid" aria-label="About content">
+          <figure class="about-photo">
+            <img src="assets/about/IMG_2521.jpeg" alt="Portrait of Sunny in front of a green wall" />
+          </figure>
+
+          <article class="about-content">
+            <p class="lead">Hi, I'm Sunny!</p>
+
+            <p>
+              I recently graduated from Michigan State University with a bachelor's in Advertising Management. Before that, I interned at MSU's Office of Faculty and Academic Staff Affairs, where I led user research, conducted UX audits, and helped select product tools that improved internal workflows. The summer before that, I spent a summer with Southwestern Advantage generating $42K in revenue across 794 product demos, which taught me more about understanding people and what they actually need than I ever expected.
+            </p>
+
+            <p>
+              On top of that, I spent a semester as the strategic lead on a capstone project for COG, an AI-powered platform helping Gen Z job seekers navigate an increasingly complicated job market. That project lit something up for me; researching competitors, shaping positioning, and seeing ideas turn into something a real founder could actually use was fulfilling.
+            </p>
+
+            <p>
+              Currently, I'm working on an app called <a href="portfolio/addie/"><em>addie</em></a>, designed to help people experiencing anxiety and panic attacks in real time. In my free time, I'm usually working out, spending time with family, or gaming. I'm interested in user-centric roles that incorporate AI in meaningful ways.
+            </p>
+
+            <p>P.S. This whole site was vibe-coded :)</p>
+
+            <p>
+              <a class="resume-link" href="assets/resume/Sun_Yu_Resume.pdf" target="_blank" rel="noopener noreferrer">Click here to download my resume!</a>
+            </p>
+          </article>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="social-links" aria-label="Social links">
+            <a href="mailto:yusunbuisness@gmail.com" aria-label="Email Sunny"><img src="assets/images/mail.png" alt="Email icon" /></a>
+            <a href="https://github.com/sunsweb" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><img src="assets/images/github.png" alt="GitHub icon" /></a>
+            <a href="https://www.linkedin.com/in/sun-yu-b11699222/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><img src="assets/images/linkedin.png" alt="LinkedIn icon" /></a>
+            <a href="https://substack.com/@thenascentsun" target="_blank" rel="noopener noreferrer" aria-label="Substack profile"><img src="assets/images/substack.png" alt="Substack icon" /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="assets/js/theme.js"></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sun Yu projects" />
+    <title>Sun Yu | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script>
+      (function () {
+        var savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark" || savedTheme === "light") {
+          document.documentElement.setAttribute("data-theme", savedTheme);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="header-inner">
+          <a class="site-logo" href="index.html">Sun Yu</a>
+          <nav class="site-nav" aria-label="Primary">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link active" aria-current="page" href="portfolio.html">Portfolio</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode"></button>
+          </nav>
+        </div>
+      </header>
+
+      <main class="container projects-main">
+        <h1 class="projects-title">My Projects</h1>
+
+        <section class="projects-grid" aria-label="Project cards">
+          <a class="project-card-link" href="portfolio/cog/" aria-label="Open COG case study page">
+            <article class="project-card">
+              <img class="project-thumb" src="assets/projects/cog/cover.png" alt="COG presentation cover" />
+              <div class="project-body">
+                <h2>COG</h2>
+                <p class="project-timeframe">Sep 2025 - Dec 2025</p>
+                <p>
+                  Go-to-market strategy for an AI startup serving Gen Z job seekers with an ethical, execution-first positioning.
+                </p>
+                <div class="tag-list" aria-label="COG tags">
+                  <span class="tag">Go-to-Market</span>
+                  <span class="tag">Competitive Intelligence</span>
+                  <span class="tag">Positioning</span>
+                  <span class="tag">Capstone</span>
+                </div>
+                <p class="status-line">Status: Complete</p>
+                <span class="case-link">View case study</span>
+              </div>
+            </article>
+          </a>
+
+          <a class="project-card-link" href="portfolio/addie/" aria-label="Open addie case study page">
+            <article class="project-card">
+              <img class="project-thumb" src="assets/projects/addie/cover.svg" alt="addie concept cover with mobile mockups" />
+              <div class="project-body">
+                <h2><em>addie</em></h2>
+                <p class="project-timeframe">Current</p>
+                <p>
+                  A low-friction anxiety and panic support app concept that starts with one tap, then guides breathing and grounding.
+                </p>
+                <div class="tag-list" aria-label="addie tags">
+                  <span class="tag">Mental Wellness</span>
+                  <span class="tag">UX Flow</span>
+                  <span class="tag">Interaction Design</span>
+                  <span class="tag">Prototype Direction</span>
+                </div>
+                <p class="status-line">Status: In Progress</p>
+                <span class="case-link">View case study</span>
+              </div>
+            </article>
+          </a>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="social-links" aria-label="Social links">
+            <a href="mailto:yusunbuisness@gmail.com" aria-label="Email Sunny"><img src="assets/images/mail.png" alt="Email icon" /></a>
+            <a href="https://github.com/sunsweb" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><img src="assets/images/github.png" alt="GitHub icon" /></a>
+            <a href="https://www.linkedin.com/in/sun-yu-b11699222/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><img src="assets/images/linkedin.png" alt="LinkedIn icon" /></a>
+            <a href="https://substack.com/@thenascentsun" target="_blank" rel="noopener noreferrer" aria-label="Substack profile"><img src="assets/images/substack.png" alt="Substack icon" /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="assets/js/theme.js"></script>
+  </body>
+</html>
