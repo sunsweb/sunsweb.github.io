@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="addie case study" />
+    <title>Sun Yu | addie Case Study</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script>
+      (function () {
+        var savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark" || savedTheme === "light") {
+          document.documentElement.setAttribute("data-theme", savedTheme);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="header-inner">
+          <a class="site-logo" href="../index.html">Sun Yu</a>
+          <nav class="site-nav" aria-label="Primary">
+            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link" href="../about.html">About</a>
+            <a class="nav-link active" aria-current="page" href="../portfolio.html">Portfolio</a>
+            <a class="nav-link" href="../contact.html">Contact</a>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode"></button>
+          </nav>
+        </div>
+      </header>
+
+      <main class="container project-main project--addie">
+        <figure class="project-cover">
+          <img src="../assets/projects/addie/cover.svg" alt="addie cover visual showing transition from panic red to calm blue" />
+        </figure>
+
+        <section class="project-head">
+          <h1><em>addie</em></h1>
+          <p class="project-subtitle">
+            A mobile concept for panic and anxiety moments: tap one button and get guided support that transitions from high-alert red toward calm blue.
+          </p>
+          <div class="project-meta" aria-label="Project metadata">
+            <div class="meta-item"><span class="meta-label">Timeframe</span><span class="meta-value">Current</span></div>
+            <div class="meta-item"><span class="meta-label">Role</span><span class="meta-value">Product Concept + UX Flow Design</span></div>
+            <div class="meta-item"><span class="meta-label">Platform</span><span class="meta-value">Mobile-first app concept</span></div>
+          </div>
+          <div class="tag-list" aria-label="addie tags">
+            <span class="tag">Panic Response</span>
+            <span class="tag">Breathing Guidance</span>
+            <span class="tag">Grounding Flow</span>
+            <span class="tag">Low-friction UX</span>
+          </div>
+        </section>
+
+        <section class="project-sections">
+          <article class="project-section project-section--overview">
+            <h2>Overview</h2>
+            <p>
+              The core idea is simple: if someone is having an anxiety or panic attack, their phone is often the closest tool.
+              <em>addie</em> is designed to reduce friction in that moment and guide users step by step toward regulation.
+            </p>
+          </article>
+
+          <article class="project-section">
+            <h2>Problem / Why It Matters</h2>
+            <p>
+              During panic, even small decisions feel difficult. Many wellness flows assume users can think clearly and navigate menus,
+              which is unrealistic in high-stress moments. The experience must work immediately, not after setup-heavy interactions.
+            </p>
+          </article>
+
+          <article class="project-section">
+            <h2>My Role</h2>
+            <ul>
+              <li>Defined the concept, scenario, and low-friction interaction priorities.</li>
+              <li>Mapped transition states: panic entry -> breathing -> check-in -> grounding.</li>
+              <li>Translated behavior goals into concrete screen concepts and visual pacing.</li>
+            </ul>
+          </article>
+
+          <article class="project-section">
+            <h2>Process / What I Did</h2>
+            <ol>
+              <li>Designed onboarding prompt for a safe nickname so the app can address users in a comforting way.</li>
+              <li>Created a default first screen with a large red “Help me” button and minimal text at the bottom.</li>
+              <li>Defined breathing flow with expanding/contracting ball and Inhale/Exhale timing cue.</li>
+              <li>Added checkpoint: “Feeling calmer?” to either progress or continue support.</li>
+              <li>Built grounding flow using 5-senses prompts tailored for anxiety/panic contexts.</li>
+              <li>Used a color transition from bright red toward blue to reflect nervous-system de-escalation.</li>
+            </ol>
+          </article>
+
+          <article class="project-section">
+            <h2>UX / UI Mockups</h2>
+            <div class="project-media-grid">
+              <img src="../assets/projects/addie/mockup-panic.svg" alt="addie panic home screen with large Help me button" />
+              <img src="../assets/projects/addie/mockup-breathing.svg" alt="addie breathing screen with inhale timing and calmer check-in" />
+              <img src="../assets/projects/addie/mockup-grounding.svg" alt="addie grounding screen showing five senses checklist" />
+              <img src="../assets/projects/addie/cover.svg" alt="addie visual system showing red to blue calming transition" />
+            </div>
+          </article>
+
+          <article class="project-section project-section--artifacts">
+            <h2>Artifacts</h2>
+            <div class="project-artifacts">
+              <span class="artifact-btn" aria-hidden="true">Concept narrative + panic scenario</span>
+              <span class="artifact-btn" aria-hidden="true">Interaction sequence map</span>
+              <span class="artifact-btn" aria-hidden="true">Screen-level UX mockups</span>
+            </div>
+          </article>
+
+          <article class="project-section project-section--outcomes">
+            <h2>Outcomes / Learnings</h2>
+            <ul>
+              <li>Low-friction flows are critical when cognitive load is high.</li>
+              <li>Color and pacing can reinforce emotional safety, not just visual style.</li>
+              <li>Branching check-ins (“calmer?”) keep support adaptive without overwhelming users.</li>
+            </ul>
+            <a class="back-link" href="../portfolio.html">Back to Portfolio</a>
+          </article>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="social-links" aria-label="Social links">
+            <a href="mailto:yusunbuisness@gmail.com" aria-label="Email Sunny"><img src="../assets/images/mail.png" alt="Email icon" /></a>
+            <a href="https://github.com/sunsweb" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><img src="../assets/images/github.png" alt="GitHub icon" /></a>
+            <a href="https://www.linkedin.com/in/sun-yu-b11699222/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><img src="../assets/images/linkedin.png" alt="LinkedIn icon" /></a>
+            <a href="https://substack.com/@thenascentsun" target="_blank" rel="noopener noreferrer" aria-label="Substack profile"><img src="../assets/images/substack.png" alt="Substack icon" /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../assets/js/theme.js"></script>
+  </body>
+</html>
