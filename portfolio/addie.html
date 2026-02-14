@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="addie case study" />
+    <title>Sun Yu | addie Case Study</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script>
+      (function () {
+        var savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark" || savedTheme === "light") {
+          document.documentElement.setAttribute("data-theme", savedTheme);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="header-inner">
+          <a class="site-logo" href="../index.html">Sun Yu</a>
+          <nav class="site-nav" aria-label="Primary">
+            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link" href="../about.html">About</a>
+            <a class="nav-link active" aria-current="page" href="../portfolio.html">Portfolio</a>
+            <a class="nav-link" href="../contact.html">Contact</a>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode"></button>
+          </nav>
+        </div>
+      </header>
+
+      <main class="container project-main project--addie">
+        <figure class="project-cover">
+          <img src="../assets/projects/addie/cover.svg" alt="addie cover visual showing transition from panic red to calm blue" />
+        </figure>
+
+        <section class="project-head">
+          <h1><em>addie</em></h1>
+          <p class="project-subtitle">
+            A mobile concept for panic and anxiety moments: tap one button and get guided support that transitions from high-alert red toward calm blue.
+          </p>
+          <div class="project-meta" aria-label="Project metadata">
+            <div class="meta-item"><span class="meta-label">Timeframe</span><span class="meta-value">Current</span></div>
+            <div class="meta-item"><span class="meta-label">Role</span><span class="meta-value">Product Concept + UX Flow Design</span></div>
+            <div class="meta-item"><span class="meta-label">Platform</span><span class="meta-value">Mobile-first app concept</span></div>
+          </div>
+          <div class="tag-list" aria-label="addie tags">
+            <span class="tag">Panic Response</span>
+            <span class="tag">Breathing Guidance</span>
+            <span class="tag">Grounding Flow</span>
+            <span class="tag">Low-friction UX</span>
+          </div>
+        </section>
+
+        <section class="project-sections">
+          <article class="project-section">
+            <h2>Problem Framing</h2>
+
+            <section class="project-subsection">
+              <h3>The Discovery</h3>
+              <p>
+                The concept starts from a practical moment: when someone is having anxiety or panic, the closest tool is usually their phone.
+                The experience must work immediately without requiring complex decisions.
+              </p>
+            </section>
+
+            <section class="project-subsection">
+              <h3>The Market Gap</h3>
+              <p>
+                Many wellness products assume calm cognition and long setup flows. In high-stress states, users need one clear action and fast guidance,
+                not menu-heavy navigation.
+              </p>
+            </section>
+
+            <section class="project-subsection">
+              <h3>The Vision</h3>
+              <p>
+                Build a low-friction support flow where a user taps “Help me,” receives breathing guidance, checks in, then transitions into grounding.
+                Visual tone intentionally shifts from alert red to calming blue.
+              </p>
+            </section>
+
+            <section class="project-subsection">
+              <h3>Constraints</h3>
+              <ul>
+                <li>Designing for high-stress moments where cognitive bandwidth is limited.</li>
+                <li>Need for minimal interaction steps while still offering meaningful support options.</li>
+                <li>Balancing emotional tone, clarity, and accessibility in a single-screen-first experience.</li>
+              </ul>
+            </section>
+
+            <section class="project-subsection">
+              <h3>Success Criteria</h3>
+              <ul>
+                <li>User can start support immediately from app open with near-zero friction.</li>
+                <li>Flow helps users progress from panic entry to calmer state through guided steps.</li>
+                <li>Experience is understandable enough to be adopted by stakeholders as a viable product direction.</li>
+              </ul>
+            </section>
+          </article>
+
+          <article class="project-section">
+            <h2>Product &amp; Design Thinking</h2>
+
+            <section class="project-subsection">
+              <h3>User Segments</h3>
+              <ul>
+                <li>People experiencing acute anxiety or panic episodes who need immediate support.</li>
+                <li>Users who prefer quick, phone-first interventions over long-form wellness routines.</li>
+              </ul>
+            </section>
+
+            <section class="project-subsection">
+              <h3>Research &amp; Insights</h3>
+              <ul>
+                <li>Prioritized low cognitive load as the primary design principle.</li>
+                <li>Identified a beneficial sequence: breathing first, then state check-in, then grounding by 5 senses.</li>
+                <li>Used visual pacing and color transition as part of emotional regulation support.</li>
+              </ul>
+            </section>
+          </article>
+
+          <article class="project-section">
+            <h2>Execution (Design to Build)</h2>
+
+            <section class="project-subsection">
+              <h3>Design</h3>
+              <p>
+                I defined the core interaction flow, onboarding nickname prompt, and screen-level structure. The entry screen emphasizes one large “Help me” action,
+                while subsequent states guide breathing, check-in, and grounding.
+              </p>
+              <div class="project-media-grid">
+                <img src="../assets/projects/addie/mockup-panic.svg" alt="addie panic home screen with large Help me button" />
+                <img src="../assets/projects/addie/mockup-breathing.svg" alt="addie breathing screen with inhale timing and calmer check-in" />
+                <img src="../assets/projects/addie/mockup-grounding.svg" alt="addie grounding screen showing five senses checklist" />
+                <img src="../assets/projects/addie/cover.svg" alt="addie visual system showing red to blue calming transition" />
+              </div>
+            </section>
+
+            <section class="project-subsection">
+              <h3>Engineering</h3>
+              <p>
+                The concept is structured for implementable state transitions (entry -> breathing -> check-in -> grounding) and modular support blocks,
+                making it suitable for iterative prototyping and future production hardening.
+              </p>
+              <div class="project-artifacts">
+                <span class="artifact-btn" aria-hidden="true">Concept narrative + panic scenario</span>
+                <span class="artifact-btn" aria-hidden="true">Interaction sequence map</span>
+                <span class="artifact-btn" aria-hidden="true">Screen-level UX mockups</span>
+              </div>
+            </section>
+          </article>
+
+          <article class="project-section project-section--impact">
+            <h2>Impact</h2>
+
+            <section class="project-subsection">
+              <h3>User / Product Outcomes</h3>
+              <ul>
+                <li>Clear, single-path entry reduces friction for users in urgent moments.</li>
+                <li>Flow design supports progressive de-escalation through guided steps and check-ins.</li>
+                <li>Mockups provide a concrete product direction for prototyping and usability validation.</li>
+              </ul>
+            </section>
+
+            <section class="project-subsection">
+              <h3>Business / Strategic Value</h3>
+              <ul>
+                <li>Creates a focused differentiation angle in digital wellness through panic-first UX design.</li>
+                <li>Provides stakeholders with a structured roadmap from concept to prototype.</li>
+                <li>Supports projected value through higher usability in critical, high-stress use cases.</li>
+              </ul>
+            </section>
+          </article>
+
+          <article class="project-section project-section--reflection">
+            <h2>Learnings &amp; Tradeoffs</h2>
+
+            <section class="project-subsection">
+              <h3>Key Tradeoffs Made</h3>
+              <ul>
+                <li>Prioritized immediacy and clarity over feature breadth.</li>
+                <li>Kept decision branches minimal to avoid overload during panic states.</li>
+                <li>Used familiar, plain-language prompts rather than dense instructional copy.</li>
+              </ul>
+            </section>
+
+            <section class="project-subsection">
+              <h3>What I’d Do Next</h3>
+              <ul>
+                <li>Run moderated tests with target users to validate comprehension and pacing.</li>
+                <li>Add calibration for personalized breathing cadence and grounding intensity.</li>
+                <li>Define outcome metrics (completion, self-reported calm, repeat use) for future iterations.</li>
+              </ul>
+            </section>
+
+            <a class="back-link" href="../portfolio.html">Back to Portfolio</a>
+          </article>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="social-links" aria-label="Social links">
+            <a href="mailto:yusunbuisness@gmail.com" aria-label="Email Sunny"><img src="../assets/images/mail.png" alt="Email icon" /></a>
+            <a href="https://github.com/sunsweb" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><img src="../assets/images/github.png" alt="GitHub icon" /></a>
+            <a href="https://www.linkedin.com/in/sun-yu-b11699222/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><img src="../assets/images/linkedin.png" alt="LinkedIn icon" /></a>
+            <a href="https://substack.com/@thenascentsun" target="_blank" rel="noopener noreferrer" aria-label="Substack profile"><img src="../assets/images/substack.png" alt="Substack icon" /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../assets/js/theme.js"></script>
+  </body>
+</html>
