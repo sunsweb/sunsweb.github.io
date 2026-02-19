@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="pyeon case study" />
+    <title>Sun Yu | pyeon Case Study</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script>
+      (function () {
+        var savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark" || savedTheme === "light") {
+          document.documentElement.setAttribute("data-theme", savedTheme);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="header-inner">
+          <a class="site-logo" href="../index.html">Sun Yu</a>
+          <nav class="site-nav" aria-label="Primary">
+            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link" href="../about.html">About</a>
+            <a class="nav-link active" aria-current="page" href="../portfolio.html">Portfolio</a>
+            <a class="nav-link" href="../contact.html">Contact</a>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode"></button>
+          </nav>
+        </div>
+      </header>
+
+      <main class="container project-main project--pyeon">
+        <figure class="project-cover">
+          <img src="../assets/projects/pyeon/cover-pyeon.png" alt="pyeon Help Me screen with high-contrast emergency support action" />
+        </figure>
+
+        <section class="project-head">
+          <h1><em>pyeon</em></h1>
+          <p class="project-subtitle">
+            A mobile-first panic support product built for moments of acute distress, designed to deliver immediate guidance in under three seconds through one clear recovery flow.
+          </p>
+          <div class="project-meta" aria-label="Project metadata">
+            <div class="meta-item"><span class="meta-label">Timeframe</span><span class="meta-value">Feb 2026 - Present (In Development)</span></div>
+            <div class="meta-item"><span class="meta-label">Role</span><span class="meta-value">Sole designer & engineer - product framing, UX, frontend, backend</span></div>
+            <div class="meta-item"><span class="meta-label">Platform</span><span class="meta-value">React Native MVP (iOS + Android)</span></div>
+          </div>
+          <div class="tag-list" aria-label="pyeon tags">
+            <span class="tag">MVP Strategy</span>
+            <span class="tag">Panic Support</span>
+            <span class="tag">Behavior Design</span>
+            <span class="tag">Local-first</span>
+          </div>
+        </section>
+
+        <section class="project-sections">
+          <article class="project-section material-card">
+            <h2 class="section-pill">Overview</h2>
+            <section class="project-subsection">
+              <p>
+                <em>pyeon</em> is an MVP focused on high-cognitive-load moments when users cannot evaluate multiple options. The product removes navigation friction and gives immediate support through a single path: breathing, grounding, then check-in.
+              </p>
+              <p>
+                The MVP is intentionally scoped to mobile, local data storage, and core intervention reliability. Launch readiness is measured through behavioral outcomes, not only screen completion.
+              </p>
+            </section>
+          </article>
+
+          <article class="project-section material-card">
+            <h2 class="section-pill">Problem Framing</h2>
+
+            <section class="project-subsection">
+              <h3>The Discovery</h3>
+              <p>
+                Panic episodes create high cognitive load, so users often cannot think clearly enough to choose from feature-heavy wellness menus. The crisis context demands immediate direction rather than exploration.
+              </p>
+            </section>
+
+            <section class="project-subsection">
+              <h3>The Market Gap</h3>
+              <p>
+                Existing apps often assume calm cognition and introduce navigation cost during the exact moment users need minimal decisions. The core gap is a zero-friction, first-action experience.
+              </p>
+            </section>
+
+            <section class="project-subsection">
+              <h3>The Vision</h3>
+              <p>
+                Design one guided path that starts in under three seconds and transitions users from alert red to calm blue: 4-7-8 breathing, 5-4-3-2-1 grounding, then emotional check-in.
+              </p>
+            </section>
+
+            <section class="project-subsection">
+              <h3>Constraints</h3>
+              <ul>
+                <li>Mobile-first MVP with no backend and local-only data persistence.</li>
+                <li>Must work offline with stable performance on iOS and Android.</li>
+                <li>Scope excludes accounts, cloud sync, and non-critical feature breadth.</li>
+              </ul>
+            </section>
+
+            <section class="project-subsection">
+              <h3>Success Criteria</h3>
+              <ul>
+                <li>Under 3 seconds from app open to first action.</li>
+                <li>Over 60% completion rate of breathing -> grounding -> check-in flow.</li>
+                <li>Over 70% of users self-report feeling calmer post-session.</li>
+              </ul>
+            </section>
+          </article>
+
+          <article class="project-section project-transformation material-card">
+            <h2 class="section-pill">User Transformation</h2>
+            <div class="transformation-grid" role="list" aria-label="Before and after user state">
+              <section class="transformation-card transformation-card--before" role="listitem">
+                <h3>Before</h3>
+                <p class="transformation-subtitle">During a panic episode</p>
+                <ul>
+                  <li>Overwhelmed and unable to think clearly</li>
+                  <li>Searching for the right tool or technique</li>
+                  <li>Rising physical symptoms and racing thoughts</li>
+                  <li>Too many choices increase cognitive load</li>
+                  <li>Anxiety continues to escalate</li>
+                </ul>
+              </section>
+
+              <section class="transformation-card transformation-card--after" role="listitem">
+                <h3>After</h3>
+                <p class="transformation-subtitle">With pyeon</p>
+                <ul>
+                  <li>Immediate one-tap access to support</li>
+                  <li>Guided breathing reduces physiological stress</li>
+                  <li>Structured grounding restores present awareness</li>
+                  <li>Calm color transitions signal nervous system regulation</li>
+                  <li>User regains a sense of control and safety</li>
+                </ul>
+              </section>
+            </div>
+          </article>
+
+          <article class="project-section">
+            <h2 class="section-pill">Product &amp; Design Thinking</h2>
+
+            <section class="project-subsection">
+              <h3>User Segments</h3>
+              <ul>
+                <li>Primary: people experiencing acute anxiety or panic who need immediate support.</li>
+                <li>Secondary: users who prefer structured, low-reading interventions over broad content libraries.</li>
+              </ul>
+            </section>
+
+            <section class="project-subsection">
+              <h3>Research &amp; Insights</h3>
+              <ul>
+                <li>4-7-8 breathing selected for clear pacing and repeatable regulation.</li>
+                <li>5-4-3-2-1 grounding selected as evidence-based sensory anchoring.</li>
+                <li>Red -> purple -> blue progression used as emotional and cognitive wayfinding.</li>
+                <li>Accessibility baseline includes VoiceOver/TalkBack support and WCAG AA contrast.</li>
+              </ul>
+            </section>
+          </article>
+
+          <article class="project-section">
+            <h2 class="section-pill">Execution (Design to Build)</h2>
+
+            <section class="project-subsection">
+              <h3>Design</h3>
+              <p>
+                The MVP experience is intentionally constrained: one high-contrast action, guided pacing, and progressive check-in states. The flow removes choice overload while keeping user agency through clear continuation points.
+              </p>
+              <div class="project-media-grid project-media-grid--pyeon" aria-label="pyeon design screens">
+                <figure class="project-media-card">
+                  <img src="../assets/projects/pyeon/design/help.png" alt="Pyeon Help Me screen" />
+                  <figcaption>Help — one-tap support</figcaption>
+                </figure>
+                <figure class="project-media-card">
+                  <img src="../assets/projects/pyeon/design/breathing.png" alt="Pyeon breathing exercise screen" />
+                  <figcaption>Breathe — guided regulation</figcaption>
+                </figure>
+                <figure class="project-media-card">
+                  <img src="../assets/projects/pyeon/design/grounding.png" alt="Pyeon grounding exercise screen" />
+                  <figcaption>Ground — 5 senses grounding</figcaption>
+                </figure>
+                <figure class="project-media-card">
+                  <img src="../assets/projects/pyeon/design/complete.png" alt="Pyeon post-session check-in screen" />
+                  <figcaption>Complete — check-in + next step</figcaption>
+                </figure>
+              </div>
+            </section>
+
+            <section class="project-subsection">
+              <h3>Engineering</h3>
+              <ul>
+                <li>React Native implementation for one codebase across iOS and Android.</li>
+                <li>Local-only storage model (no backend) for MVP speed, privacy, and reliability.</li>
+                <li>Session logging designed for completion and outcome tracking.</li>
+              </ul>
+              <div class="project-artifacts">
+                <a class="artifact-btn" href="../assets/projects/pyeon/pyeon_PRD_MVP_tight.pdf" target="_blank" rel="noopener noreferrer">View Product Requirements Document</a>
+              </div>
+            </section>
+          </article>
+
+          <article class="project-section project-section--impact material-card">
+            <h2 class="section-pill">Impact</h2>
+
+            <section class="project-subsection">
+              <h3>User / Product Outcomes</h3>
+              <ul>
+                <li>Transforms panic response from search behavior to guided execution in one flow.</li>
+                <li>Defines measurable MVP success through time-to-action, completion, and calmness outcomes.</li>
+                <li>Improves immediate usability for high-stress moments through visual-first interaction design.</li>
+              </ul>
+            </section>
+
+            <section class="project-subsection">
+              <h3>Business / Strategic Value</h3>
+              <ul>
+                <li>Clear MVP scope reduces build risk and accelerates validation cycles.</li>
+                <li>Differentiates through low-friction crisis usability rather than feature volume.</li>
+                <li>Creates a metrics-ready foundation for post-MVP prioritization and expansion.</li>
+              </ul>
+            </section>
+          </article>
+
+          <article class="project-section project-section--reflection material-card">
+            <h2 class="section-pill">Learnings &amp; Tradeoffs</h2>
+
+            <section class="project-subsection">
+              <h3>Key Tradeoffs Made</h3>
+              <ul>
+                <li>Prioritized a single guided path over customizable branching to minimize cognitive load.</li>
+                <li>Deferred backend and account features to keep MVP delivery and offline reliability on track.</li>
+                <li>Kept scope tight by excluding non-essential capabilities (history UI, notifications, multi-language).</li>
+              </ul>
+            </section>
+
+            <section class="project-subsection">
+              <h3>What I’d Do Next</h3>
+              <ul>
+                <li>Validate first-action speed and completion metrics with moderated user testing.</li>
+                <li>Analyze where users drop in the flow and refine pacing/wording accordingly.</li>
+                <li>Plan post-MVP roadmap based on measurable calmness and retention outcomes.</li>
+              </ul>
+            </section>
+
+            <a class="back-link" href="../portfolio.html">Back to Portfolio</a>
+          </article>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="social-links" aria-label="Social links">
+            <a href="mailto:yusunbuisness@gmail.com" aria-label="Email Sunny"><img src="../assets/images/mail.png" alt="Email icon" /></a>
+            <a href="https://github.com/sunsweb" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><img src="../assets/images/github.png" alt="GitHub icon" /></a>
+            <a href="https://www.linkedin.com/in/sun-yu-b11699222/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><img src="../assets/images/linkedin.png" alt="LinkedIn icon" /></a>
+            <a href="https://substack.com/@thenascentsun" target="_blank" rel="noopener noreferrer" aria-label="Substack profile"><img src="../assets/images/substack.png" alt="Substack icon" /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../assets/js/theme.js"></script>
+  </body>
+</html>
